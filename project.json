@@ -1,0 +1,45 @@
+{
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "name": "PatientprepSL",
+  "root": ".",
+  "sourceRoot": "app/routes",
+  "projectType": "application",
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "expo start"
+      }
+    },
+    "worker": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm --prefix app/patientprep-cloudflare/patientprep-ai-coach run dev"
+      }
+    },
+    "dev-all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run dev:all"
+      }
+    },
+    "android": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "expo start --android"
+      }
+    },
+    "web": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "expo start --web"
+      }
+    },
+    "doctor": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx expo-doctor"
+      }
+    }
+  }
+}

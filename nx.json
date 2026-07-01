@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultProject": "PatientprepSL",
+  "useDaemonProcess": false,
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*"
+    ],
+    "production": [
+      "default"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "doctor": {
+      "cache": true
+    }
+  },
+  "analytics": false
+}

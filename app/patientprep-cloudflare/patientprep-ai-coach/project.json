@@ -1,0 +1,46 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "ai-coach",
+  "root": "app/patientprep-cloudflare/patientprep-ai-coach",
+  "sourceRoot": "app/patientprep-cloudflare/patientprep-ai-coach/src",
+  "projectType": "application",
+  "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm install",
+        "cwd": "app/patientprep-cloudflare/patientprep-ai-coach"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run dev",
+        "cwd": "app/patientprep-cloudflare/patientprep-ai-coach"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run deploy",
+        "cwd": "app/patientprep-cloudflare/patientprep-ai-coach"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/coverage"],
+      "options": {
+        "command": "npm run test",
+        "cwd": "app/patientprep-cloudflare/patientprep-ai-coach"
+      }
+    },
+    "typegen": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/worker-configuration.d.ts"],
+      "options": {
+        "command": "npm run cf-typegen",
+        "cwd": "app/patientprep-cloudflare/patientprep-ai-coach"
+      }
+    }
+  }
+}

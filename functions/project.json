@@ -1,0 +1,39 @@
+{
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "name": "functions",
+  "root": "functions",
+  "sourceRoot": "functions/src",
+  "projectType": "application",
+  "targets": {
+    "install": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm install",
+        "cwd": "functions"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/lib"],
+      "options": {
+        "command": "npm run build",
+        "cwd": "functions"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npm run serve",
+        "cwd": "functions"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "command": "npm run deploy",
+        "cwd": "functions"
+      }
+    }
+  }
+}
