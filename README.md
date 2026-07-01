@@ -2,6 +2,8 @@
 
 ## Privacy-First Doctor Visit Preparation MVP
 
+Patients consulting AI powered mobile app guide by Virtusa Pvt Ltd.
+
 PatientPrep SL is a mobile MVP that helps patients prepare for doctor consultations before they enter the clinic. The app guides users to organize doctor appointment details, symptoms, medications, questions, and consultation summaries in one simple flow.
 
 The product is designed as **preparation support**, not medical diagnosis. It helps patients remember important details and communicate clearly with healthcare professionals.
@@ -398,4 +400,3 @@ Final verdict:
 **PatientPrep SL is a good MVP and presentation-ready prototype.**
 
 It is not yet production-ready, but it is strong enough for stakeholder demonstration, academic presentation, and MVP validation.
-
